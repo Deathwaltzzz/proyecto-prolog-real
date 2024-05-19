@@ -1,8 +1,3 @@
-:- discontiguous tiene_graficos/2
-:- discontiguous tiene_historia_y_narrativa/2.
-:- discontiguous tiene_mecanicas_de_juego/2.
-:- discontiguous videojuego_componente/2.
-:- discontiguous tiene_musica_y_sonido/2.
 
 
 % Hechos de videojuegos
@@ -348,7 +343,7 @@ videojuego_plataforma(tom_clancys_rainbow_six_siege, pc).
 
 % Categoría de Gráficos
 graficos('2d').
-graficos(''3d'').
+graficos('3d').
 
 % Categoría de Música y Sonido
 musica_y_sonido('8_bits').
@@ -402,6 +397,12 @@ componente_videojuego(musica_y_sonido).
 componente_videojuego(historia_y_narrativa).
 componente_videojuego(mecanicas_de_juego).
 
+:- discontiguous tiene_graficos/2.
+:- discontiguous tiene_historia_y_narrativa/2.
+:- discontiguous tiene_mecanicas_de_juego/2.
+:- discontiguous videojuego_componente/2.
+:- discontiguous tiene_musica_y_sonido/2.
+
 
 % Super Mario Bros
 videojuego_componente(super_mario_bros, graficos).
@@ -410,7 +411,7 @@ videojuego_componente(super_mario_bros, historia_y_narrativa).
 videojuego_componente(super_mario_bros, mecanicas_de_juego).
 
 tiene_graficos(super_mario_bros, '2d').
-tiene_musica_y_sonido(super_mario_bros, 8_bits).
+tiene_musica_y_sonido(super_mario_bros, '8_bits').
 tiene_historia_y_narrativa(super_mario_bros, narrativa_casual).
 tiene_mecanicas_de_juego(super_mario_bros, plataforma).
 
@@ -422,7 +423,7 @@ videojuego_componente(the_legend_of_zelda, historia_y_narrativa).
 videojuego_componente(the_legend_of_zelda, mecanicas_de_juego).
 
 tiene_graficos(the_legend_of_zelda, '2d').
-tiene_musica_y_sonido(the_legend_of_zelda, 8_bits).
+tiene_musica_y_sonido(the_legend_of_zelda, '8_bits').
 tiene_historia_y_narrativa(the_legend_of_zelda, narrativa_profunda).
 tiene_mecanicas_de_juego(the_legend_of_zelda, aventura).
 
@@ -466,7 +467,7 @@ videojuego_componente(call_of_duty, mecanicas_de_juego).
 
 tiene_graficos(call_of_duty, '3d').
 tiene_musica_y_sonido(call_of_duty, electronica).
-tiene_historia_y_narrativa(call_of_duty, narrativa_de_acción).
+tiene_historia_y_narrativa(call_of_duty, narrativa_de_accion).
 tiene_mecanicas_de_juego(call_of_duty, disparos).
 
 % Overwatch
@@ -477,7 +478,7 @@ videojuego_componente(overwatch, mecanicas_de_juego).
 
 tiene_graficos(overwatch, '3d').
 tiene_musica_y_sonido(overwatch, electronica).
-tiene_historia_y_narrativa(overwatch, narrativa_de_acción).
+tiene_historia_y_narrativa(overwatch, narrativa_de_accion).
 tiene_mecanicas_de_juego(overwatch, disparos).
 
 % World of Warcraft
@@ -1412,6 +1413,553 @@ tiene_graficos(tom_clancys_rainbow_six_siege, '3d').
 tiene_musica_y_sonido(tom_clancys_rainbow_six_siege, electronica).
 tiene_historia_y_narrativa(tom_clancys_rainbow_six_siege, narrativa_casual).
 tiene_mecanicas_de_juego(tom_clancys_rainbow_six_siege, disparos).
+
+% ----------------------------------------------------------------------------------------------------------------------------
+% Desarrollo de videojuegos
+
+% Lenguajes de Programación
+lenguaje_programacion(cpp).
+lenguaje_programacion(c_sharp).
+lenguaje_programacion(python).
+lenguaje_programacion(java).
+lenguaje_programacion(assembler).
+
+% Herramientas de Programación
+motor_videojuego(unity).
+motor_videojuego(unreal_engine).
+motor_videojuego(godot).
+motor_videojuego(pygame).
+motor_videojuego(lumberyard).
+motor_videojuego(custom_engine).
+motor_videojuego(source).
+motor_videojuego(blizzard_engine).
+motor_videojuego(redengine).
+motor_videojuego(rage).
+motor_videojuego(iw_engine).
+motor_videojuego(libgdx).
+motor_videojuego(creation_engine).
+motor_videojuego(mt_framework).
+motor_videojuego(re_engine).
+motor_videojuego(genie_engine).
+motor_videojuego(anvil).
+motor_videojuego(enfusion).
+motor_videojuego(clickteam_fusion).
+motor_videojuego(cryengine).
+
+% Relación de herramientas con Lenguajes de Programación
+relacion_herramienta_lenguaje_programacion(unity, c_sharp).
+relacion_herramienta_lenguaje_programacion(unreal_engine, cpp).
+relacion_herramienta_lenguaje_programacion(godot, c_sharp).
+relacion_herramienta_lenguaje_programacion(pygame, python).
+relacion_herramienta_lenguaje_programacion(lumberyard, cpp).
+relacion_herramienta_lenguaje_programacion(custom_engine, cpp).
+relacion_herramienta_lenguaje_programacion(source, cpp).
+relacion_herramienta_lenguaje_programacion(blizzard_engine, cpp).
+relacion_herramienta_lenguaje_programacion(redengine, cpp).
+relacion_herramienta_lenguaje_programacion(rage, cpp).
+relacion_herramienta_lenguaje_programacion(iw_engine, cpp).
+relacion_herramienta_lenguaje_programacion(libgdx, java).
+relacion_herramienta_lenguaje_programacion(creation_engine, cpp).
+relacion_herramienta_lenguaje_programacion(mt_framework, cpp).
+relacion_herramienta_lenguaje_programacion(re_engine, cpp).
+relacion_herramienta_lenguaje_programacion(genie_engine, cpp).
+relacion_herramienta_lenguaje_programacion(anvil, cpp).
+relacion_herramienta_lenguaje_programacion(enfusion, cpp).
+relacion_herramienta_lenguaje_programacion(clickteam_fusion, cpp).
+relacion_herramienta_lenguaje_programacion(cryengine, cpp).
+
+% Relación de videojuegos con herramientas de programación
+videojuego_hecho_con(super_mario_bros, assembler).
+videojuego_hecho_con(the_legend_of_zelda, assembler).
+videojuego_hecho_con(minecraft, java).
+videojuego_hecho_con(fortnite, unreal_engine).
+videojuego_hecho_con(among_us, unity).
+videojuego_hecho_con(call_of_duty, iw_engine).
+videojuego_hecho_con(overwatch, blizzard_engine).
+videojuego_hecho_con(world_of_warcraft, blizzard_engine).
+videojuego_hecho_con(the_witcher_3, redengine).
+videojuego_hecho_con(red_dead_redemption_2, rage).
+videojuego_hecho_con(grand_theft_auto_v, rage).
+videojuego_hecho_con(apex_legends, source).
+videojuego_hecho_con(valiant, unreal_engine).
+videojuego_hecho_con(league_of_legends, custom_engine).
+videojuego_hecho_con(dota_2, source_2).
+videojuego_hecho_con(cyberpunk_2077, redengine).
+videojuego_hecho_con(animal_crossing_new_horizons, custom_engine).
+videojuego_hecho_con(hades, custom_engine).
+videojuego_hecho_con(stardew_valley, xna).
+videojuego_hecho_con(fall_guys, unity).
+videojuego_hecho_con(dark_souls_iii, custom_engine).
+videojuego_hecho_con(bloodborne, custom_engine).
+videojuego_hecho_con(sekiro_shadows_die_twice, custom_engine).
+videojuego_hecho_con(hollow_knight, unity).
+videojuego_hecho_con(celeste, xna).
+videojuego_hecho_con(monster_hunter_world, mt_framework).
+videojuego_hecho_con(terraria, xna).
+videojuego_hecho_con(slay_the_spire, libgdx).
+videojuego_hecho_con(the_elder_scrolls_v_skyrim, creation_engine).
+videojuego_hecho_con(persona_5, custom_engine).
+videojuego_hecho_con(final_fantasy_vii_remake, unreal_engine).
+videojuego_hecho_con(dragon_quest_xi, unreal_engine).
+videojuego_hecho_con(nier_automata, custom_engine).
+videojuego_hecho_con(ghost_of_tsushima, custom_engine).
+videojuego_hecho_con(spiderman, custom_engine).
+videojuego_hecho_con(god_of_war, custom_engine).
+videojuego_hecho_con(horizon_zero_dawn, decima).
+videojuego_hecho_con(uncharted_4, custom_engine).
+videojuego_hecho_con(the_last_of_us_part_ii, custom_engine).
+videojuego_hecho_con(resident_evil_2, re_engine).
+videojuego_hecho_con(resident_evil_3, re_engine).
+videojuego_hecho_con(resident_evil_7, re_engine).
+videojuego_hecho_con(resident_evil_village, re_engine).
+videojuego_hecho_con(mortal_kombat_11, unreal_engine).
+videojuego_hecho_con(street_fighter_v, unreal_engine).
+videojuego_hecho_con(tekken_7, unreal_engine).
+videojuego_hecho_con(super_smash_bros_ultimate, custom_engine).
+videojuego_hecho_con(splatoon_2, custom_engine).
+videojuego_hecho_con(fire_emblem_three_houses, custom_engine).
+videojuego_hecho_con(xenoblade_chronicles_2, custom_engine).
+videojuego_hecho_con(mario_kart_8_deluxe, custom_engine).
+videojuego_hecho_con(super_mario_odyssey, custom_engine).
+videojuego_hecho_con(luigis_mansion_3, custom_engine).
+videojuego_hecho_con(bayonetta_2, custom_engine).
+videojuego_hecho_con(pikmin_3, custom_engine).
+videojuego_hecho_con(donkey_kong_country_tropical_freeze, custom_engine).
+videojuego_hecho_con(metroid_dread, custom_engine).
+videojuego_hecho_con(the_legend_of_zelda_breath_of_the_wild, custom_engine).
+videojuego_hecho_con(the_legend_of_zelda_links_awakening, custom_engine).
+videojuego_hecho_con(the_legend_of_zelda_ocarina_of_time, custom_engine).
+videojuego_hecho_con(the_legend_of_zelda_majoras_mask, custom_engine).
+videojuego_hecho_con(super_mario_3d_world, custom_engine).
+videojuego_hecho_con(super_mario_galaxy, custom_engine).
+videojuego_hecho_con(super_mario_galaxy_2, custom_engine).
+videojuego_hecho_con(super_mario_sunshine, custom_engine).
+videojuego_hecho_con(super_mario_64, custom_engine).
+videojuego_hecho_con(paper_mario_the_origami_king, custom_engine).
+videojuego_hecho_con(paper_mario_the_thousand_year_door, custom_engine).
+videojuego_hecho_con(mario_rabbids_kingdom_battle, custom_engine).
+videojuego_hecho_con(mario_party_10, custom_engine).
+videojuego_hecho_con(yoshis_crafted_world, custom_engine).
+videojuego_hecho_con(kirby_star_allies, custom_engine).
+videojuego_hecho_con(crash_bandicoot_n_sane_trilogy, unreal_engine).
+videojuego_hecho_con(crash_team_racing_nitro_fueled, unreal_engine).
+videojuego_hecho_con(spyro_reignited_trilogy, unreal_engine).
+videojuego_hecho_con(the_sims_4, custom_engine).
+videojuego_hecho_con(simcity, custom_engine).
+videojuego_hecho_con(cities_skylines, unity).
+videojuego_hecho_con(civilization_vi, custom_engine).
+videojuego_hecho_con(age_of_empires_ii, genie_engine).
+videojuego_hecho_con(starcraft_ii, custom_engine).
+videojuego_hecho_con(warcraft_iii, custom_engine).
+videojuego_hecho_con(diablo_iii, custom_engine).
+videojuego_hecho_con(path_of_exile, custom_engine).
+videojuego_hecho_con(pubg, unreal_engine).
+videojuego_hecho_con(rust, unity).
+videojuego_hecho_con(ark_survival_evolved, unreal_engine).
+videojuego_hecho_con(dayz, enfusion).
+videojuego_hecho_con(escape_from_tarkov, unity).
+videojuego_hecho_con(dead_by_daylight, unreal_engine).
+videojuego_hecho_con(phasmophobia, unity).
+videojuego_hecho_con(five_nights_at_freddys, clickteam_fusion).
+videojuego_hecho_con(left_4_dead_2, source).
+videojuego_hecho_con(borderlands_3, unreal_engine).
+videojuego_hecho_con(far_cry_5, cryengine).
+videojuego_hecho_con(assassins_creed_odyssey, anvil).
+videojuego_hecho_con(assassins_creed_valhalla, anvil).
+videojuego_hecho_con(tom_clancys_rainbow_six_siege, anvil).
+
+
+%- ----------------------------------------------------------------------------------------------------------------------------
+% Industria de videojuegos
+
+% Compañías desarrolladoras de videojuegos
+compania_desarrolladora(ubisoft).
+compania_desarrolladora(nintendo).
+compania_desarrolladora(xbox_game_studios).
+compania_desarrolladora(playstation_studios).
+compania_desarrolladora(electronic_arts).
+compania_desarrolladora(blizzard_entertainment).
+compania_desarrolladora(bethesda_softworks).
+compania_desarrolladora(rockstar_games).
+compania_desarrolladora(cd_projekt_red).
+compania_desarrolladora(valve_corporation).
+compania_desarrolladora(riot_games).
+compania_desarrolladora(activision).
+compania_desarrolladora(supercell).
+compania_desarrolladora(innersloth).
+compania_desarrolladora(insomniac_games).
+compania_desarrolladora(sucker_punch_productions).
+compania_desarrolladora(santa_monica_studio).
+compania_desarrolladora(guerrilla_games).
+compania_desarrolladora(naughty_dog).
+compania_desarrolladora(platinumgames).
+compania_desarrolladora(capcom).
+compania_desarrolladora(re_logic).
+compania_desarrolladora(megacrit).
+compania_desarrolladora(atlus).
+compania_desarrolladora(square_enix).
+compania_desarrolladora(fromsoftware).
+compania_desarrolladora(team_cherry).
+compania_desarrolladora(matt_makes_games).
+compania_desarrolladora(netherrealm_studios).
+compania_desarrolladora(bandai_namco).
+compania_desarrolladora(intelligent_systems).
+compania_desarrolladora(monolith_soft).
+compania_desarrolladora(next_level_games).
+compania_desarrolladora(retro_studios).
+compania_desarrolladora(mercury_steam).
+compania_desarrolladora(kinetic_games).
+
+% Modelos de negocio
+modelo_negocio(free_to_play).
+modelo_negocio(pago_unico).
+modelo_negocio(subscripcion).
+
+%Plataformas de distribución
+plataforma_distribucion(steam).
+plataforma_distribucion(epic_games_store).
+plataforma_distribucion(playstation_store).
+plataforma_distribucion(xbox_store).
+plataforma_distribucion(nintendo_eshop).
+plataforma_distribucion(mojang).
+plataforma_distribucion(riot_games).
+plataforma_distribucion(blizzard_entertainment).
+plataforma_distribucion(ubisoft).
+plataforma_distribucion(electronic_arts).
+plataforma_distribucion(gog).
+plataforma_distribucion(rockstar_games).
+plataforma_distribucion(cd_projekt_red).
+plataforma_distribucion(valve_corporation).
+plataforma_distribucion(activision).
+plataforma_distribucion(supercell).
+plataforma_distribucion(innersloth).
+plataforma_distribucion(insomniac_games).
+
+
+% Videojuegos y sus compañías desarrolladoras
+desarrollado_por(super_mario_bros, nintendo).
+desarrollado_por(the_legend_of_zelda, nintendo).
+desarrollado_por(minecraft, mojang).
+desarrollado_por(fortnite, epic_games).
+desarrollado_por(among_us, innersloth).
+desarrollado_por(call_of_duty, activision).
+desarrollado_por(overwatch, blizzard_entertainment).
+desarrollado_por(world_of_warcraft, blizzard_entertainment).
+desarrollado_por(the_witcher_3, cd_projekt_red).
+desarrollado_por(red_dead_redemption_2, rockstar_games).
+desarrollado_por(grand_theft_auto_v, rockstar_games).
+desarrollado_por(apex_legends, respawn_entertainment).
+desarrollado_por(valiant, riot_games).
+desarrollado_por(league_of_legends, riot_games).
+desarrollado_por(dota_2, valve_corporation).
+desarrollado_por(cyberpunk_2077, cd_projekt_red).
+desarrollado_por(animal_crossing_new_horizons, nintendo).
+desarrollado_por(hades, supergiant_games).
+desarrollado_por(stardew_valley, concerned_ape).
+desarrollado_por(fall_guys, mediatonic).
+desarrollado_por(dark_souls_iii, fromsoftware).
+desarrollado_por(bloodborne, fromsoftware).
+desarrollado_por(sekiro_shadows_die_twice, fromsoftware).
+desarrollado_por(hollow_knight, team_cherry).
+desarrollado_por(celeste, matt_makes_games).
+desarrollado_por(monster_hunter_world, capcom).
+desarrollado_por(terraria, re_logic).
+desarrollado_por(slay_the_spire, megacrit).
+desarrollado_por(the_elder_scrolls_v_skyrim, bethesda_softworks).
+desarrollado_por(persona_5, atlus).
+desarrollado_por(final_fantasy_vii_remake, square_enix).
+desarrollado_por(dragon_quest_xi, square_enix).
+desarrollado_por(nier_automata, platinumgames).
+desarrollado_por(ghost_of_tsushima, sucker_punch_productions).
+desarrollado_por(spiderman, insomniac_games).
+desarrollado_por(god_of_war, santa_monica_studio).
+desarrollado_por(horizon_zero_dawn, guerrilla_games).
+desarrollado_por(uncharted_4, naughty_dog).
+desarrollado_por(the_last_of_us_part_ii, naughty_dog).
+desarrollado_por(resident_evil_2, capcom).
+desarrollado_por(resident_evil_3, capcom).
+desarrollado_por(resident_evil_7, capcom).
+desarrollado_por(resident_evil_village, capcom).
+desarrollado_por(mortal_kombat_11, netherrealm_studios).
+desarrollado_por(street_fighter_v, capcom).
+desarrollado_por(tekken_7, bandai_namco).
+desarrollado_por(super_smash_bros_ultimate, nintendo).
+desarrollado_por(splatoon_2, nintendo).
+desarrollado_por(fire_emblem_three_houses, intelligent_systems).
+desarrollado_por(xenoblade_chronicles_2, monolith_soft).
+desarrollado_por(mario_kart_8_deluxe, nintendo).
+desarrollado_por(super_mario_odyssey, nintendo).
+desarrollado_por(luigis_mansion_3, next_level_games).
+desarrollado_por(bayonetta_2, platinumgames).
+desarrollado_por(pikmin_3, nintendo).
+desarrollado_por(donkey_kong_country_tropical_freeze, retro_studios).
+desarrollado_por(metroid_dread, mercury_steam).
+desarrollado_por(the_legend_of_zelda_breath_of_the_wild, nintendo).
+desarrollado_por(the_legend_of_zelda_links_awakening, nintendo).
+desarrollado_por(the_legend_of_zelda_ocarina_of_time, nintendo).
+desarrollado_por(the_legend_of_zelda_majoras_mask, nintendo).
+desarrollado_por(super_mario_3d_world, nintendo).
+desarrollado_por(super_mario_galaxy, nintendo).
+desarrollado_por(super_mario_galaxy_2, nintendo).
+desarrollado_por(super_mario_sunshine, nintendo).
+desarrollado_por(super_mario_64, nintendo).
+desarrollado_por(paper_mario_the_origami_king, intelligent_systems).
+desarrollado_por(paper_mario_the_thousand_year_door, intelligent_systems).
+desarrollado_por(mario_rabbids_kingdom_battle, ubisoft).
+desarrollado_por(mario_party_10, ndcube).
+desarrollado_por(yoshis_crafted_world, good-feel).
+desarrollado_por(kirby_star_allies, hal_laboratory).
+desarrollado_por(crash_bandicoot_n_sane_trilogy, vicarious_visions).
+desarrollado_por(crash_team_racing_nitro_fueled, beenox).
+desarrollado_por(spyro_reignited_trilogy, toys_for_bob).
+desarrollado_por(the_sims_4, maxis).
+desarrollado_por(simcity, maxis).
+desarrollado_por(cities_skylines, colossal_order).
+desarrollado_por(civilization_vi, firaxis_games).
+desarrollado_por(age_of_empires_ii, ensemble_studios).
+desarrollado_por(starcraft_ii, blizzard_entertainment).
+desarrollado_por(warcraft_iii, blizzard_entertainment).
+desarrollado_por(diablo_iii, blizzard_entertainment).
+desarrollado_por(path_of_exile, grinding_gear_games).
+desarrollado_por(pubg, pubg_corporation).
+desarrollado_por(rust, facepunch_studios).
+desarrollado_por(ark_survival_evolved, studio_wildcard).
+desarrollado_por(dayz, bohemia_interactive).
+desarrollado_por(escape_from_tarkov, battlestate_games).
+desarrollado_por(dead_by_daylight, behaviour_interactive).
+desarrollado_por(phasmophobia, kinetic_games).
+desarrollado_por(five_nights_at_freddys, scott_cawthon).
+desarrollado_por(left_4_dead_2, valve_corporation).
+desarrollado_por(borderlands_3, gearbox_software).
+desarrollado_por(far_cry_5, ubisoft).
+desarrollado_por(assassins_creed_odyssey, ubisoft).
+desarrollado_por(assassins_creed_valhalla, ubisoft).
+desarrollado_por(tom_clancys_rainbow_six_siege, ubisoft).
+
+% Modelos de negocio de los videojuegos
+modelo_negocio_videojuego(super_mario_bros, pago_unico).
+modelo_negocio_videojuego(the_legend_of_zelda, pago_unico).
+modelo_negocio_videojuego(minecraft, pago_unico).
+modelo_negocio_videojuego(fortnite, free_to_play).
+modelo_negocio_videojuego(among_us, pago_unico).
+modelo_negocio_videojuego(call_of_duty, pago_unico).
+modelo_negocio_videojuego(overwatch, pago_unico).
+modelo_negocio_videojuego(world_of_warcraft, subscripcion).
+modelo_negocio_videojuego(the_witcher_3, pago_unico).
+modelo_negocio_videojuego(red_dead_redemption_2, pago_unico).
+modelo_negocio_videojuego(grand_theft_auto_v, pago_unico).
+modelo_negocio_videojuego(apex_legends, free_to_play).
+modelo_negocio_videojuego(valiant, free_to_play).
+modelo_negocio_videojuego(league_of_legends, free_to_play).
+modelo_negocio_videojuego(dota_2, free_to_play).
+modelo_negocio_videojuego(cyberpunk_2077, pago_unico).
+modelo_negocio_videojuego(animal_crossing_new_horizons, pago_unico).
+modelo_negocio_videojuego(hades, pago_unico).
+modelo_negocio_videojuego(stardew_valley, pago_unico).
+modelo_negocio_videojuego(fall_guys, pago_unico).
+modelo_negocio_videojuego(dark_souls_iii, pago_unico).
+modelo_negocio_videojuego(bloodborne, pago_unico).
+modelo_negocio_videojuego(sekiro_shadows_die_twice, pago_unico).
+modelo_negocio_videojuego(hollow_knight, pago_unico).
+modelo_negocio_videojuego(celeste, pago_unico).
+modelo_negocio_videojuego(monster_hunter_world, pago_unico).
+modelo_negocio_videojuego(terraria, pago_unico).
+modelo_negocio_videojuego(slay_the_spire, pago_unico).
+modelo_negocio_videojuego(the_elder_scrolls_v_skyrim, pago_unico).
+modelo_negocio_videojuego(persona_5, pago_unico).
+modelo_negocio_videojuego(final_fantasy_vii_remake, pago_unico).
+modelo_negocio_videojuego(dragon_quest_xi, pago_unico).
+modelo_negocio_videojuego(nier_automata, pago_unico).
+modelo_negocio_videojuego(ghost_of_tsushima, pago_unico).
+modelo_negocio_videojuego(spiderman, pago_unico).
+modelo_negocio_videojuego(god_of_war, pago_unico).
+modelo_negocio_videojuego(horizon_zero_dawn, pago_unico).
+modelo_negocio_videojuego(uncharted_4, pago_unico).
+modelo_negocio_videojuego(the_last_of_us_part_ii, pago_unico).
+modelo_negocio_videojuego(resident_evil_2, pago_unico).
+modelo_negocio_videojuego(resident_evil_3, pago_unico).
+modelo_negocio_videojuego(resident_evil_7, pago_unico).
+modelo_negocio_videojuego(resident_evil_village, pago_unico).
+modelo_negocio_videojuego(mortal_kombat_11, pago_unico).
+modelo_negocio_videojuego(street_fighter_v, pago_unico).
+modelo_negocio_videojuego(tekken_7, pago_unico).
+modelo_negocio_videojuego(super_smash_bros_ultimate, pago_unico).
+modelo_negocio_videojuego(splatoon_2, pago_unico).
+modelo_negocio_videojuego(fire_emblem_three_houses, pago_unico).
+modelo_negocio_videojuego(xenoblade_chronicles_2, pago_unico).
+modelo_negocio_videojuego(mario_kart_8_deluxe, pago_unico).
+modelo_negocio_videojuego(super_mario_odyssey, pago_unico).
+modelo_negocio_videojuego(luigis_mansion_3, pago_unico).
+modelo_negocio_videojuego(bayonetta_2, pago_unico).
+modelo_negocio_videojuego(pikmin_3, pago_unico).
+modelo_negocio_videojuego(donkey_kong_country_tropical_freeze, pago_unico).
+modelo_negocio_videojuego(metroid_dread, pago_unico).
+modelo_negocio_videojuego(the_legend_of_zelda_breath_of_the_wild, pago_unico).
+modelo_negocio_videojuego(the_legend_of_zelda_links_awakening, pago_unico).
+modelo_negocio_videojuego(the_legend_of_zelda_ocarina_of_time, pago_unico).
+modelo_negocio_videojuego(the_legend_of_zelda_majoras_mask, pago_unico).
+modelo_negocio_videojuego(super_mario_3d_world, pago_unico).
+modelo_negocio_videojuego(super_mario_galaxy, pago_unico).
+modelo_negocio_videojuego(super_mario_galaxy_2, pago_unico).
+modelo_negocio_videojuego(super_mario_sunshine, pago_unico).
+modelo_negocio_videojuego(super_mario_64, pago_unico).
+modelo_negocio_videojuego(paper_mario_the_origami_king, pago_unico).
+modelo_negocio_videojuego(paper_mario_the_thousand_year_door, pago_unico).
+modelo_negocio_videojuego(mario_rabbids_kingdom_battle, pago_unico).
+modelo_negocio_videojuego(mario_party_10, pago_unico).
+modelo_negocio_videojuego(yoshis_crafted_world, pago_unico).
+modelo_negocio_videojuego(kirby_star_allies, pago_unico).
+modelo_negocio_videojuego(crash_bandicoot_n_sane_trilogy, pago_unico).
+modelo_negocio_videojuego(crash_team_racing_nitro_fueled, pago_unico).
+modelo_negocio_videojuego(spyro_reignited_trilogy, pago_unico).
+modelo_negocio_videojuego(the_sims_4, pago_unico).
+modelo_negocio_videojuego(simcity, pago_unico).
+modelo_negocio_videojuego(cities_skylines, pago_unico).
+modelo_negocio_videojuego(civilization_vi, pago_unico).
+modelo_negocio_videojuego(age_of_empires_ii, pago_unico).
+modelo_negocio_videojuego(starcraft_ii, pago_unico).
+modelo_negocio_videojuego(warcraft_iii, pago_unico).
+modelo_negocio_videojuego(diablo_iii, pago_unico).
+modelo_negocio_videojuego(path_of_exile, free_to_play).
+modelo_negocio_videojuego(pubg, pago_unico).
+modelo_negocio_videojuego(rust, pago_unico).
+modelo_negocio_videojuego(ark_survival_evolved, pago_unico).
+modelo_negocio_videojuego(dayz, pago_unico).
+modelo_negocio_videojuego(escape_from_tarkov, pago_unico).
+modelo_negocio_videojuego(dead_by_daylight, pago_unico).
+modelo_negocio_videojuego(phasmophobia, pago_unico).
+modelo_negocio_videojuego(five_nights_at_freddys, pago_unico).
+modelo_negocio_videojuego(left_4_dead_2, pago_unico).
+modelo_negocio_videojuego(borderlands_3, pago_unico).
+modelo_negocio_videojuego(far_cry_5, pago_unico).
+modelo_negocio_videojuego(assassins_creed_odyssey, pago_unico).
+modelo_negocio_videojuego(assassins_creed_valhalla, pago_unico).
+modelo_negocio_videojuego(tom_clancys_rainbow_six_siege, pago_unico).
+
+% Distribución de videojuegos
+distribuido_por(super_mario_bros, nintendo).
+distribuido_por(the_legend_of_zelda, nintendo).
+distribuido_por(minecraft, mojang).
+distribuido_por(fortnite, epic_games).
+distribuido_por(among_us, innersloth).
+distribuido_por(call_of_duty, activision).
+distribuido_por(overwatch, blizzard_entertainment).
+distribuido_por(world_of_warcraft, blizzard_entertainment).
+distribuido_por(the_witcher_3, cd_projekt_red).
+distribuido_por(red_dead_redemption_2, rockstar_games).
+distribuido_por(grand_theft_auto_v, rockstar_games).
+distribuido_por(apex_legends, respawn_entertainment).
+distribuido_por(valiant, riot_games).
+distribuido_por(league_of_legends, riot_games).
+distribuido_por(dota_2, valve_corporation).
+distribuido_por(cyberpunk_2077, cd_projekt_red).
+distribuido_por(animal_crossing_new_horizons, nintendo).
+distribuido_por(hades, supergiant_games).
+distribuido_por(stardew_valley, concerned_ape).
+distribuido_por(fall_guys, mediatonic).
+distribuido_por(dark_souls_iii, fromsoftware).
+distribuido_por(bloodborne, fromsoftware).
+distribuido_por(sekiro_shadows_die_twice, fromsoftware).
+distribuido_por(hollow_knight, team_cherry).
+distribuido_por(celeste, matt_makes_games).
+distribuido_por(monster_hunter_world, capcom).
+distribuido_por(terraria, re_logic).
+distribuido_por(slay_the_spire, megacrit).
+distribuido_por(the_elder_scrolls_v_skyrim, bethesda_softworks).
+distribuido_por(persona_5, atlus).
+distribuido_por(final_fantasy_vii_remake, square_enix).
+distribuido_por(dragon_quest_xi, square_enix).
+distribuido_por(nier_automata, platinumgames).
+distribuido_por(ghost_of_tsushima, sucker_punch_productions).
+distribuido_por(spiderman, insomniac_games).
+distribuido_por(god_of_war, santa_monica_studio).
+distribuido_por(horizon_zero_dawn, guerrilla_games).
+distribuido_por(uncharted_4, naughty_dog).
+distribuido_por(the_last_of_us_part_ii, naughty_dog).
+distribuido_por(resident_evil_2, capcom).
+distribuido_por(resident_evil_3, capcom).
+distribuido_por(resident_evil_7, capcom).
+distribuido_por(resident_evil_village, capcom).
+distribuido_por(mortal_kombat_11, netherrealm_studios).
+distribuido_por(street_fighter_v, capcom).
+distribuido_por(tekken_7, bandai_namco).
+distribuido_por(super_smash_bros_ultimate, nintendo).
+distribuido_por(splatoon_2, nintendo).
+distribuido_por(fire_emblem_three_houses, intelligent_systems).
+distribuido_por(xenoblade_chronicles_2, monolith_soft).
+distribuido_por(mario_kart_8_deluxe, nintendo).
+distribuido_por(super_mario_odyssey, nintendo).
+distribuido_por(luigis_mansion_3, next_level_games).
+distribuido_por(bayonetta_2, platinumgames).
+distribuido_por(pikmin_3, nintendo).
+distribuido_por(donkey_kong_country_tropical_freeze, retro_studios).
+distribuido_por(metroid_dread, mercury_steam).
+distribuido_por(the_legend_of_zelda_breath_of_the_wild, nintendo).
+distribuido_por(the_legend_of_zelda_links_awakening, nintendo).
+distribuido_por(the_legend_of_zelda_ocarina_of_time, nintendo).
+distribuido_por(the_legend_of_zelda_majoras_mask, nintendo).
+distribuido_por(super_mario_3d_world, nintendo).
+distribuido_por(super_mario_galaxy, nintendo).
+distribuido_por(super_mario_galaxy_2, nintendo).
+distribuido_por(super_mario_sunshine, nintendo).
+distribuido_por(super_mario_64, nintendo).
+distribuido_por(paper_mario_the_origami_king, intelligent_systems).
+distribuido_por(paper_mario_the_thousand_year_door, intelligent_systems).
+distribuido_por(mario_rabbids_kingdom_battle, ubisoft).
+distribuido_por(mario_party_10, ndcube).
+distribuido_por(yoshis_crafted_world, good-feel).
+distribuido_por(kirby_star_allies, hal_laboratory).
+distribuido_por(crash_bandicoot_n_sane_trilogy, vicarious_visions).
+distribuido_por(crash_team_racing_nitro_fueled, beenox).
+distribuido_por(spyro_reignited_trilogy, toys_for_bob).
+distribuido_por(the_sims_4, maxis).
+distribuido_por(simcity, maxis).
+distribuido_por(cities_skylines, colossal_order).
+distribuido_por(civilization_vi, firaxis_games).
+distribuido_por(age_of_empires_ii, ensemble_studios).
+distribuido_por(starcraft_ii, blizzard_entertainment).
+distribuido_por(warcraft_iii, blizzard_entertainment).
+distribuido_por(diablo_iii, blizzard_entertainment).
+distribuido_por(path_of_exile, grinding_gear_games).
+distribuido_por(pubg, pubg_corporation).
+distribuido_por(rust, facepunch_studios).
+distribuido_por(ark_survival_evolved, studio_wildcard).
+distribuido_por(dayz, bohemia_interactive).
+distribuido_por(escape_from_tarkov, battlestate_games).
+distribuido_por(dead_by_daylight, behaviour_interactive).
+distribuido_por(phasmophobia, kinetic_games).
+distribuido_por(five_nights_at_freddys, scott_cawthon).
+distribuido_por(left_4_dead_2, valve_corporation).
+distribuido_por(borderlands_3, gearbox_software).
+distribuido_por(far_cry_5, ubisoft).
+distribuido_por(assassins_creed_odyssey, ubisoft).
+distribuido_por(assassins_creed_valhalla, ubisoft).
+distribuido_por(tom_clancys_rainbow_six_siege, ubisoft).
+
+
+%- ----------------------------------------------------------------------------------------------------------------------------
+
+% ----------------------------------------------------------------------------------------------------------------------------
+% Reglas para desarrolladores de videojuegos
+desarrollador_de_videojuegos(Desarrollador) :-
+    compania_desarrolladora(Desarrollador).
+
+% Reglas para encontrar el modelo de negocio de un videojuego
+modelo_de_negocio_de_videojuego(Videojuego, Modelo) :-
+    modelo_negocio_videojuego(Videojuego, Modelo).
+
+% Reglas para encontrar la compañía desarrolladora de un videojuego
+compania_desarrolladora_de_videojuego(Videojuego, Compania) :-
+    desarrollado_por(Videojuego, Compania).
+
+
+% Reglas para programacion de videojuegos
+lenguaje_de_programacion_para_herramienta(Lenguaje, Herramienta) :-
+    relacion_herramienta_lenguaje_programacion(Herramienta, Lenguaje).
+
+% Regla para ver con que motor de videojuegos fue hecho un videojuego
+motor_de_videojuego(Videojuego, Motor) :-
+    videojuego_hecho_con(Videojuego, Motor).
 
 % Reglas para encontrar los graficos de un videojuego
 graficos_de_videojuego(Videojuego, Graficos) :-
