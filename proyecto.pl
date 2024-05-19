@@ -1,8 +1,9 @@
+:- discontiguous tiene_graficos/2
 :- discontiguous tiene_historia_y_narrativa/2.
 :- discontiguous tiene_mecanicas_de_juego/2.
 :- discontiguous videojuego_componente/2.
 :- discontiguous tiene_musica_y_sonido/2.
-:- discontiguous tiene_graficos/2
+
 
 % Hechos de videojuegos
 videojuego(super_mario_bros).
@@ -1475,3 +1476,14 @@ es_subtipo(Videojuego, Subtipo) :-
 % Ejemplo de uso
 % es_subtipo(super_mario_bros, plataformas).
 % es_subtipo(call_of_duty, shooter).
+
+% Reglas compuestas
+es_shooter(Videojuego) :-
+    es_subtipo(Videojuego, shooter).
+
+es_shooter_en_3d(Videojuego) :-
+    es_subtipo(Videojuego, shooter),
+    graficos_de_videojuego(Videojuego, '3d').
+
+mecanica_de_supervivencia(Videojuego) :-
+    tiene_mecanicas_de_juego(Videojuego, supervivencia).  
