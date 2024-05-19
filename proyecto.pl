@@ -2035,3 +2035,8 @@ es_shooter_en_3d(Videojuego) :-
 
 mecanica_de_supervivencia(Videojuego) :-
     tiene_mecanicas_de_juego(Videojuego, supervivencia).  
+
+compania_desarrolladora_de_shooters_3d(Compania) :-
+    desarrollador_de_videojuegos(Compania),
+    es_shooter_en_3d(Videojuego),
+    desarrollado_por(Videojuego, Compania).
