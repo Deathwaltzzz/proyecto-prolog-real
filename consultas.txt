@@ -1,0 +1,20 @@
+% Consulta para ver si un juego esta en la lista
+videojuego(X) % Donde X es el nombre del videojuego
+
+set_prolog_flag(answer_write_options,[max_depth(0)]). % Para que no haya límite de profundidad en la respuesta
+
+%Consulta los tipos de juego por plataforma
+?- bagof(Videojuego, plataforma_de_videojuego(Videojuego,pc), Videojuegos_pc).
+?- bagof(Videojuego, plataforma_de_videojuego(Videojuego,consolas_de_sobremesa), Videojuegos_consola_sobremesa).
+?- bagof(Videojuego, plataforma_de_videojuego(Videojuego,dispositivos_moviles), Videojuegos_movil).
+?- bagof(Videojuego, plataforma_de_videojuego(Videojuego,consolas_portatiles), Videojuegos_consola_portatil).
+
+% Consulta juegos en 2d
+?- bagof(Videojuego, tiene_graficos(Videojuego, '2d'),Videojuego_2d).
+bagof(Videojuego,graficos_de_videojuego(Videojuego, '2d'),Videojuegos_2d).
+% Consulta juegos en 3d
+?- bagof(Videojuego, tiene_graficos(Videojuego, '3d'),Videojuego_3d).
+bagof(Videojuego,graficos_de_videojuego(Videojuego, '2d'),Videojuegos_2d).
+
+% Consultas de musica
+bagof(Videojuego, musica_y_sonido_de_videojuego(Videojuego, X), Videojuegos_musica). (Nomas cambiar X por el tipo de musica a buscar)
