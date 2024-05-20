@@ -25,3 +25,6 @@ bagof(Videojuego, mecanicas_de_juego_de_videojuego(Videojuego, Mecanicas), Video
 mecanicas_de_juego_de_videojuego(escape_from_tarkov, Mecanicas).
 
 mecanica_de_supervivencia(dead_by_daylight).
+
+% Consultar todos los juegos de esports con su respectivo torneo
+findall((Videojuego, Torneo), relacion_videojuego_torneo(Videojuego, Torneo), Resultados).

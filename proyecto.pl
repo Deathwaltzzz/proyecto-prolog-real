@@ -238,106 +238,106 @@ plataforma_videojuego(realidad_virtual).
 subplataforma_videojuego(consolas_de_sobremesa, consolas).
 subplataforma_videojuego(consolas_portatiles, consolas).
 
-% Videojuego por plataforma
 
-videojuego_plataforma(super_mario_bros, consolas_de_sobremesa).
-videojuego_plataforma(the_legend_of_zelda, consolas_de_sobremesa).
-videojuego_plataforma(minecraft, pc).
-videojuego_plataforma(fortnite, dispositivos_moviles).
-videojuego_plataforma(among_us, dispositivos_moviles).
-videojuego_plataforma(call_of_duty, consolas_de_sobremesa).
-videojuego_plataforma(overwatch, consolas_de_sobremesa).
-videojuego_plataforma(world_of_warcraft, pc).
-videojuego_plataforma(the_witcher_3, consolas_de_sobremesa).
-videojuego_plataforma(red_dead_redemption_2, consolas_de_sobremesa).
-videojuego_plataforma(grand_theft_auto_v, pc).
-videojuego_plataforma(apex_legends, consolas_de_sobremesa).
-videojuego_plataforma(valiant, pc).
-videojuego_plataforma(league_of_legends, pc).
-videojuego_plataforma(dota_2, pc).
-videojuego_plataforma(cyberpunk_2077, pc).
-videojuego_plataforma(animal_crossing_new_horizons, consolas_portatiles).
-videojuego_plataforma(hades, pc).
-videojuego_plataforma(stardew_valley, dispositivos_moviles).
-videojuego_plataforma(fall_guys, consolas_de_sobremesa).
-videojuego_plataforma(dark_souls_iii, consolas_de_sobremesa).
-videojuego_plataforma(bloodborne, consolas_de_sobremesa).
-videojuego_plataforma(sekiro_shadows_die_twice, consolas_de_sobremesa).
-videojuego_plataforma(hollow_knight, consolas_portatiles).
-videojuego_plataforma(celeste, consolas_portatiles).
-videojuego_plataforma(monster_hunter_world, consolas_de_sobremesa).
-videojuego_plataforma(terraria, dispositivos_moviles).
-videojuego_plataforma(slay_the_spire, pc).
-videojuego_plataforma(the_elder_scrolls_v_skyrim, pc).
-videojuego_plataforma(persona_5, consolas_de_sobremesa).
-videojuego_plataforma(final_fantasy_vii_remake, consolas_de_sobremesa).
-videojuego_plataforma(dragon_quest_xi, consolas_de_sobremesa).
-videojuego_plataforma(nier_automata, pc).
-videojuego_plataforma(ghost_of_tsushima, consolas_de_sobremesa).
-videojuego_plataforma(spiderman, consolas_de_sobremesa).
-videojuego_plataforma(god_of_war, consolas_de_sobremesa).
-videojuego_plataforma(horizon_zero_dawn, pc).
-videojuego_plataforma(uncharted_4, consolas_de_sobremesa).
-videojuego_plataforma(the_last_of_us_part_ii, consolas_de_sobremesa).
-videojuego_plataforma(resident_evil_2, consolas_de_sobremesa).
-videojuego_plataforma(resident_evil_3, consolas_de_sobremesa).
-videojuego_plataforma(resident_evil_7, consolas_de_sobremesa).
-videojuego_plataforma(resident_evil_village, consolas_de_sobremesa).
-videojuego_plataforma(mortal_kombat_11, consolas_de_sobremesa).
-videojuego_plataforma(street_fighter_v, consolas_de_sobremesa).
-videojuego_plataforma(tekken_7, consolas_de_sobremesa).
-videojuego_plataforma(super_smash_bros_ultimate, consolas_de_sobremesa).
-videojuego_plataforma(splatoon_2, consolas_de_sobremesa).
-videojuego_plataforma(fire_emblem_three_houses, consolas_portatiles).
-videojuego_plataforma(xenoblade_chronicles_2, consolas_portatiles).
-videojuego_plataforma(mario_kart_8_deluxe, consolas_de_sobremesa).
-videojuego_plataforma(super_mario_odyssey, consolas_de_sobremesa).
-videojuego_plataforma(luigis_mansion_3, consolas_de_sobremesa).
-videojuego_plataforma(bayonetta_2, consolas_de_sobremesa).
-videojuego_plataforma(pikmin_3, consolas_de_sobremesa).
-videojuego_plataforma(donkey_kong_country_tropical_freeze, consolas_de_sobremesa).
-videojuego_plataforma(metroid_dread, consolas_de_sobremesa).
-videojuego_plataforma(the_legend_of_zelda_breath_of_the_wild, consolas_de_sobremesa).
-videojuego_plataforma(the_legend_of_zelda_links_awakening, consolas_portatiles).
-videojuego_plataforma(the_legend_of_zelda_ocarina_of_time, consolas_portatiles).
-videojuego_plataforma(the_legend_of_zelda_majoras_mask, consolas_portatiles).
-videojuego_plataforma(super_mario_3d_world, consolas_de_sobremesa).
-videojuego_plataforma(super_mario_galaxy, consolas_de_sobremesa).
-videojuego_plataforma(super_mario_galaxy_2, consolas_de_sobremesa).
-videojuego_plataforma(super_mario_sunshine, consolas_de_sobremesa).
-videojuego_plataforma(super_mario_64, consolas_de_sobremesa).
-videojuego_plataforma(paper_mario_the_origami_king, consolas_de_sobremesa).
-videojuego_plataforma(paper_mario_the_thousand_year_door, consolas_de_sobremesa).
-videojuego_plataforma(mario_rabbids_kingdom_battle, consolas_de_sobremesa).
-videojuego_plataforma(mario_party_10, consolas_de_sobremesa).
-videojuego_plataforma(yoshis_crafted_world, consolas_de_sobremesa).
-videojuego_plataforma(kirby_star_allies, consolas_de_sobremesa).
-videojuego_plataforma(crash_bandicoot_n_sane_trilogy, consolas_de_sobremesa).
-videojuego_plataforma(crash_team_racing_nitro_fueled, consolas_de_sobremesa).
-videojuego_plataforma(spyro_reignited_trilogy, consolas_de_sobremesa).
-videojuego_plataforma(the_sims_4, pc).
-videojuego_plataforma(simcity, pc).
-videojuego_plataforma(cities_skylines, pc).
-videojuego_plataforma(civilization_vi, pc).
-videojuego_plataforma(age_of_empires_ii, pc).
-videojuego_plataforma(starcraft_ii, pc).
-videojuego_plataforma(warcraft_iii, pc).
-videojuego_plataforma(diablo_iii, pc).
-videojuego_plataforma(path_of_exile, pc).
-videojuego_plataforma(pubg, pc).
-videojuego_plataforma(rust, pc).
-videojuego_plataforma(ark_survival_evolved, pc).
-videojuego_plataforma(dayz, pc).
-videojuego_plataforma(escape_from_tarkov, pc).
-videojuego_plataforma(dead_by_daylight, pc).
-videojuego_plataforma(phasmophobia, pc).
-videojuego_plataforma(five_nights_at_freddys, pc).
-videojuego_plataforma(left_4_dead_2, pc).
-videojuego_plataforma(borderlands_3, pc).
-videojuego_plataforma(far_cry_5, pc).
-videojuego_plataforma(assassins_creed_odyssey, pc).
-videojuego_plataforma(assassins_creed_valhalla, pc).
-videojuego_plataforma(tom_clancys_rainbow_six_siege, pc).
+% Hechos de videojuegos y sus plataformas
+videojuego_plataforma(super_mario_bros, [consolas_de_sobremesa]).
+videojuego_plataforma(the_legend_of_zelda, [consolas_de_sobremesa]).
+videojuego_plataforma(minecraft, [pc, consolas_de_sobremesa, consolas_portatiles, dispositivos_moviles]).
+videojuego_plataforma(fortnite, [dispositivos_moviles, pc, consolas_de_sobremesa]).
+videojuego_plataforma(among_us, [dispositivos_moviles, pc, consolas_de_sobremesa, consolas_portatiles]).
+videojuego_plataforma(call_of_duty, [consolas_de_sobremesa, pc, dispositivos_moviles]).
+videojuego_plataforma(overwatch, [consolas_de_sobremesa]).
+videojuego_plataforma(world_of_warcraft, [pc]).
+videojuego_plataforma(the_witcher_3, [consolas_de_sobremesa]).
+videojuego_plataforma(red_dead_redemption_2, [consolas_de_sobremesa]).
+videojuego_plataforma(grand_theft_auto_v, [pc]).
+videojuego_plataforma(apex_legends, [consolas_de_sobremesa]).
+videojuego_plataforma(valiant, [pc]).
+videojuego_plataforma(league_of_legends, [pc]).
+videojuego_plataforma(dota_2, [pc]).
+videojuego_plataforma(cyberpunk_2077, [pc]).
+videojuego_plataforma(animal_crossing_new_horizons, [consolas_portatiles]).
+videojuego_plataforma(hades, [pc]).
+videojuego_plataforma(stardew_valley, [dispositivos_moviles]).
+videojuego_plataforma(fall_guys, [consolas_de_sobremesa]).
+videojuego_plataforma(dark_souls_iii, [consolas_de_sobremesa]).
+videojuego_plataforma(bloodborne, [consolas_de_sobremesa]).
+videojuego_plataforma(sekiro_shadows_die_twice, [consolas_de_sobremesa]).
+videojuego_plataforma(hollow_knight, [consolas_portatiles]).
+videojuego_plataforma(celeste, [consolas_portatiles]).
+videojuego_plataforma(monster_hunter_world, [consolas_de_sobremesa]).
+videojuego_plataforma(terraria, [dispositivos_moviles]).
+videojuego_plataforma(slay_the_spire, [pc]).
+videojuego_plataforma(the_elder_scrolls_v_skyrim, [pc]).
+videojuego_plataforma(persona_5, [consolas_de_sobremesa]).
+videojuego_plataforma(final_fantasy_vii_remake, [consolas_de_sobremesa]).
+videojuego_plataforma(dragon_quest_xi, [consolas_de_sobremesa]).
+videojuego_plataforma(nier_automata, [pc]).
+videojuego_plataforma(ghost_of_tsushima, [consolas_de_sobremesa]).
+videojuego_plataforma(spiderman, [consolas_de_sobremesa]).
+videojuego_plataforma(god_of_war, [consolas_de_sobremesa]).
+videojuego_plataforma(horizon_zero_dawn, [pc]).
+videojuego_plataforma(uncharted_4, [consolas_de_sobremesa]).
+videojuego_plataforma(the_last_of_us_part_ii, [consolas_de_sobremesa]).
+videojuego_plataforma(resident_evil_2, [consolas_de_sobremesa]).
+videojuego_plataforma(resident_evil_3, [consolas_de_sobremesa]).
+videojuego_plataforma(resident_evil_7, [consolas_de_sobremesa]).
+videojuego_plataforma(resident_evil_village, [consolas_de_sobremesa]).
+videojuego_plataforma(mortal_kombat_11, [consolas_de_sobremesa]).
+videojuego_plataforma(street_fighter_v, [consolas_de_sobremesa]).
+videojuego_plataforma(tekken_7, [consolas_de_sobremesa]).
+videojuego_plataforma(super_smash_bros_ultimate, [consolas_de_sobremesa]).
+videojuego_plataforma(splatoon_2, [consolas_de_sobremesa]).
+videojuego_plataforma(fire_emblem_three_houses, [consolas_portatiles]).
+videojuego_plataforma(xenoblade_chronicles_2, [consolas_portatiles]).
+videojuego_plataforma(mario_kart_8_deluxe, [consolas_de_sobremesa]).
+videojuego_plataforma(super_mario_odyssey, [consolas_de_sobremesa]).
+videojuego_plataforma(luigis_mansion_3, [consolas_de_sobremesa]).
+videojuego_plataforma(bayonetta_2, [consolas_de_sobremesa]).
+videojuego_plataforma(pikmin_3, [consolas_de_sobremesa]).
+videojuego_plataforma(donkey_kong_country_tropical_freeze, [consolas_de_sobremesa]).
+videojuego_plataforma(metroid_dread, [consolas_de_sobremesa]).
+videojuego_plataforma(the_legend_of_zelda_breath_of_the_wild, [consolas_de_sobremesa]).
+videojuego_plataforma(the_legend_of_zelda_links_awakening, [consolas_portatiles]).
+videojuego_plataforma(the_legend_of_zelda_ocarina_of_time, [consolas_portatiles]).
+videojuego_plataforma(the_legend_of_zelda_majoras_mask, [consolas_portatiles]).
+videojuego_plataforma(super_mario_3d_world, [consolas_de_sobremesa]).
+videojuego_plataforma(super_mario_galaxy, [consolas_de_sobremesa]).
+videojuego_plataforma(super_mario_galaxy_2, [consolas_de_sobremesa]).
+videojuego_plataforma(super_mario_sunshine, [consolas_de_sobremesa]).
+videojuego_plataforma(super_mario_64, [consolas_de_sobremesa]).
+videojuego_plataforma(paper_mario_the_origami_king, [consolas_de_sobremesa]).
+videojuego_plataforma(paper_mario_the_thousand_year_door, [consolas_de_sobremesa]).
+videojuego_plataforma(mario_rabbids_kingdom_battle, [consolas_de_sobremesa]).
+videojuego_plataforma(mario_party_10, [consolas_de_sobremesa]).
+videojuego_plataforma(yoshis_crafted_world, [consolas_de_sobremesa]).
+videojuego_plataforma(kirby_star_allies, [consolas_de_sobremesa]).
+videojuego_plataforma(crash_bandicoot_n_sane_trilogy, [consolas_de_sobremesa]).
+videojuego_plataforma(crash_team_racing_nitro_fueled, [consolas_de_sobremesa]).
+videojuego_plataforma(spyro_reignited_trilogy, [consolas_de_sobremesa]).
+videojuego_plataforma(the_sims_4, [pc]).
+videojuego_plataforma(simcity, [pc]).
+videojuego_plataforma(cities_skylines, [pc]).
+videojuego_plataforma(civilization_vi, [pc]).
+videojuego_plataforma(age_of_empires_ii, [pc]).
+videojuego_plataforma(starcraft_ii, [pc]).
+videojuego_plataforma(warcraft_iii, [pc]).
+videojuego_plataforma(diablo_iii, [pc]).
+videojuego_plataforma(path_of_exile, [pc]).
+videojuego_plataforma(pubg, [pc, consolas_de_sobremesa, dispositivos_moviles]).
+videojuego_plataforma(rust, [pc]).
+videojuego_plataforma(ark_survival_evolved, [pc]).
+videojuego_plataforma(dayz, [pc]).
+videojuego_plataforma(escape_from_tarkov, [pc]).
+videojuego_plataforma(dead_by_daylight, [pc]).
+videojuego_plataforma(phasmophobia, [pc]).
+videojuego_plataforma(five_nights_at_freddys, [pc]).
+videojuego_plataforma(left_4_dead_2, [pc, consolas_de_sobremesa]).
+videojuego_plataforma(borderlands_3, [pc]).
+videojuego_plataforma(far_cry_5, [pc]).
+videojuego_plataforma(assassins_creed_odyssey, [pc]).
+videojuego_plataforma(assassins_creed_valhalla, [pc]).
+videojuego_plataforma(tom_clancys_rainbow_six_siege, [pc, consolas_de_sobremesa]).
 
 % COMPONENTES DE VIDEOJUEGO
 
@@ -1939,7 +1939,64 @@ distribuido_por(tom_clancys_rainbow_six_siege, ubisoft).
 
 %- ----------------------------------------------------------------------------------------------------------------------------
 
+%-----------------------------------------------------------------------------------------------------------------------------
+
+% Competencia en Videojuegos
+competencia_videojuegos(esports).
+
+% Videojuegos populares en eSports
+videojuego_esports(fortnite).
+videojuego_esports(call_of_duty).
+videojuego_esports(overwatch).
+videojuego_esports(apex_legends).
+videojuego_esports(league_of_legends).
+videojuego_esports(dota_2).
+videojuego_esports(street_fighter_v).
+videojuego_esports(tekken_7).
+videojuego_esports(super_smash_bros_ultimate).
+videojuego_esports(starcraft_ii).
+videojuego_esports(pubg).
+videojuego_esports(tom_clancys_rainbow_six_siege).
+
+% Torneos importantes en eSports
+torneo_esports(worlds).
+torneo_esports(the_international).
+torneo_esports(overwatch_league).
+torneo_esports(call_of_duty_league).
+torneo_esports(fortnite_world_cup).
+torneo_esports(algs_championship).
+torneo_esports(evo_championship_series).
+torneo_esports(rocket_league_championship_series).
+torneo_esports(six_invitational).
+torneo_esports(major_championship).
+torneo_esports(wcs).
+torneo_esports(e_league).
+
+% Relación entre videojuegos y torneos en eSports
+relacion_videojuego_torneo(fortnite, fortnite_world_cup).
+relacion_videojuego_torneo(call_of_duty, call_of_duty_league).
+relacion_videojuego_torneo(overwatch, overwatch_league).
+relacion_videojuego_torneo(apex_legends, algs_championship).
+relacion_videojuego_torneo(league_of_legends, worlds).
+relacion_videojuego_torneo(dota_2, the_international).
+relacion_videojuego_torneo(street_fighter_v, evo_championship_series).
+relacion_videojuego_torneo(tekken_7, evo_championship_series).
+relacion_videojuego_torneo(super_smash_bros_ultimate, evo_championship_series).
+relacion_videojuego_torneo(starcraft_ii, wcs).
+relacion_videojuego_torneo(pubg, e_league).
+relacion_videojuego_torneo(tom_clancys_rainbow_six_siege, six_invitational).
+
 % ----------------------------------------------------------------------------------------------------------------------------
+
+%Regla para decir si un juego es de eSports
+es_esports(Videojuego) :- videojuego_esports(Videojuego).
+
+%Regla para decir si un torneo es de eSports
+es_torneo(Torneo) :- torneo_esports(Torneo).
+
+%Regla para decir si un videojuego tiene un torneo de eSports
+tiene_torneo(Videojuego, Torneo) :- relacion_videojuego_torneo(Videojuego, Torneo).
+
 % Reglas para desarrolladores de videojuegos
 desarrollador_de_videojuegos(Desarrollador) :-
     compania_desarrolladora(Desarrollador).
@@ -2025,6 +2082,11 @@ es_subtipo(Videojuego, Subtipo) :-
 % es_subtipo(super_mario_bros, plataformas).
 % es_subtipo(call_of_duty, shooter).
 
+% Regla para encontrar un juego de acción
+es_accion(Videojuego) :-
+    es_tipo(Videojuego, accion),
+    write(Videojuego), write(' es de accion'), nl.
+
 % Reglas compuestas
 es_shooter(Videojuego) :-
     es_subtipo(Videojuego, shooter).
@@ -2040,3 +2102,190 @@ compania_desarrolladora_de_shooters_3d(Compania) :-
     desarrollador_de_videojuegos(Compania),
     es_shooter_en_3d(Videojuego),
     desarrollado_por(Videojuego, Compania).
+
+compania_desarrolladora_de_plataformero_2d(Compania) :-
+    desarrollador_de_videojuegos(Compania),
+    es_subtipo(Videojuego, plataformas),
+    graficos_de_videojuego(Videojuego, '2d'),
+    desarrollado_por(Videojuego, Compania).
+
+compania_desarrolladora_de_shooter_con_esport(Compania) :-
+    desarrollador_de_videojuegos(Compania),
+    es_shooter(Videojuego),
+    es_esports(Videojuego),
+    desarrollado_por(Videojuego, Compania).
+
+torneo_de_esport_de_shooter(Torneo) :-
+    es_torneo(Torneo),
+    tiene_torneo(Videojuego, Torneo),
+    es_shooter(Videojuego). 
+
+%Regla para ver si un videojuego esta en todas las plataformas
+videojuego_en_todas_las_plataformas(Videojuego) :-
+    videojuego_plataforma(Videojuego, Plataformas),
+    sort(Plataformas, PlataformasOrdenadas),
+    sort([pc, consolas_de_sobremesa, consolas_portatiles, dispositivos_moviles], TodasLasPlataformas),
+    PlataformasOrdenadas = TodasLasPlataformas.
+
+% Regla para ver si un videojuego esta en pc, consolas de sobremesa y consolas portatiles
+videojuego_en_pc_y_consolas(Videojuego) :-
+    videojuego_plataforma(Videojuego, Plataformas),
+    sort(Plataformas, PlataformasOrdenadas),
+    sort([pc, consolas_de_sobremesa, consolas_portatiles], PlataformasPermitidas),
+    PlataformasOrdenadas = PlataformasPermitidas.
+
+% Regla para ver si un videojuego esta en pc y consolas de sobremesa
+videojuego_en_pc_y_consolas_sobremesa(Videojuego) :-
+    videojuego_plataforma(Videojuego, Plataformas),
+    sort(Plataformas, PlataformasOrdenadas),
+    sort([pc, consolas_de_sobremesa], PlataformasPermitidas),
+    PlataformasOrdenadas = PlataformasPermitidas.
+
+% Regla para ver si un videojuego esta en pc y consolas portatiles
+videojuego_en_pc_y_consolas_portatiles(Videojuego) :-
+    videojuego_plataforma(Videojuego, Plataformas),
+    sort(Plataformas, PlataformasOrdenadas),
+    sort([pc, consolas_portatiles], PlataformasPermitidas),
+    PlataformasOrdenadas = PlataformasPermitidas.
+
+% Reglas formateadas
+%Torneos de esports
+consultar_torneos_esports :-
+    write('Torneos de eSports:'), nl,
+    torneo_esports(Torneo),
+    write(Torneo), nl,
+    fail. % Fail forces backtracking to find all solutions
+consultar_torneos_esports.   
+
+%Videojuegos de esports
+consultar_videojuegos_esports :-
+    write('Videojuegos de eSports:'), nl,
+    videojuego_esports(Videojuego),
+    write(Videojuego), nl,
+    fail. % Fail forces backtracking to find all solutions
+consultar_videojuegos_esports.   
+
+%Videojuegos de esports y su tipo
+consultar_videojuegos_esports_tipo :-
+    write('Videojuegos de eSports y su tipo:'), nl,
+    videojuego_esports(Videojuego),
+    tipo_de_videojuego(Videojuego, Tipo),
+    write(Videojuego), write(' - '), write(Tipo), nl,
+    fail. % Fail forces backtracking to find all solutions
+consultar_videojuegos_esports_tipo.
+
+%Videojuegos de esports y su genero
+consultar_videojuegos_esports_genero :-
+    write('Videojuegos de eSports y su genero:'), nl,
+    videojuego_esports(Videojuego),
+    es_subtipo(Videojuego, Subtipo),
+    write(Videojuego), write(' - '), write(Subtipo), nl,
+    fail. % Fail forces backtracking to find all solutions
+consultar_videojuegos_esports_genero.
+
+%Videojuegos de esports y su plataforma
+consultar_videojuegos_esports_plataforma :-
+    write('Videojuegos de eSports y su plataforma:'), nl,
+    videojuego_esports(Videojuego),
+    plataforma_de_videojuego(Videojuego, Plataforma),
+    write(Videojuego), write(' - '), write(Plataforma), nl,
+    fail. % Fail forces backtracking to find all solutions
+consultar_videojuegos_esports_plataforma.
+
+%Videojuegos de esports y su modelo de negocio
+consultar_videojuegos_esports_modelo_negocio :-
+    write('Videojuegos de eSports y su modelo de negocio:'), nl,
+    videojuego_esports(Videojuego),
+    modelo_de_negocio_de_videojuego(Videojuego, Modelo),
+    write(Videojuego), write(' - '), write(Modelo), nl,
+    fail. % Fail forces backtracking to find all solutions
+consultar_videojuegos_esports_modelo_negocio.
+
+%Videojuegos que esten en todas las plataformas
+% Regla para imprimir los videojuegos disponibles en todas las plataformas
+consultar_videojuegos_todas_plataformas :-
+    write('Videojuegos disponibles en todas las plataformas:'), nl,
+    (   videojuego_en_todas_las_plataformas(Videojuego),
+        write(Videojuego), nl,
+        fail
+    ;   true
+    ).
+consultar_videojuegos_todas_plataformas.
+
+% Consultar videojuegos que esten en pc y consolas
+consultar_videojuegos_pc_y_consolas :-
+    write('Videojuegos disponibles en PC y consolas:'), nl,
+    (   videojuego_en_pc_y_consolas(Videojuego),
+        write(Videojuego), nl,
+        fail
+    ;   true
+    ).
+consultar_videojuegos_pc_y_consolas.
+
+% Consultar videojuegos que esten en pc y consolas de sobremesa
+consultar_videojuegos_pc_y_consolas_sobremesa :-
+    write('Videojuegos disponibles en PC y consolas de sobremesa:'), nl,
+    (   videojuego_en_pc_y_consolas_sobremesa(Videojuego),
+        write(Videojuego), nl,
+        fail
+    ;   true
+    ).
+consultar_videojuegos_pc_y_consolas_sobremesa.
+
+% Consultar videojuegos que esten en pc y consolas portatiles
+consultar_videojuegos_pc_y_consolas_portatiles :-
+    write('Videojuegos disponibles en PC y consolas portatiles:'), nl,
+    (   videojuego_en_pc_y_consolas_portatiles(Videojuego),
+        write(Videojuego), nl,
+        fail
+    ;   true
+    ).
+consultar_videojuegos_pc_y_consolas_portatiles.
+
+
+
+% ----------------------------------------------------------------------------------------------------------------------------
+
+% Van 40 reglas
+
+% es_esports(Videojuego) - Parameter: Videojuego
+% es_torneo(Torneo) - Parameter: Torneo
+% tiene_torneo(Videojuego, Torneo) - Parameters: Videojuego, Torneo
+% desarrollador_de_videojuegos(Desarrollador) - Parameter: Desarrollador
+% modelo_de_negocio_de_videojuego(Videojuego, Modelo) - Parameters: Videojuego, Modelo
+% compania_desarrolladora_de_videojuego(Videojuego, Compania) - Parameters: Videojuego, Compania
+% lenguaje_de_programacion_para_herramienta(Lenguaje, Herramienta) - Parameters: Lenguaje, Herramienta
+% motor_de_videojuego(Videojuego, Motor) - Parameters: Videojuego, Motor
+% graficos_de_videojuego(Videojuego, Graficos) - Parameters: Videojuego, Graficos
+% musica_y_sonido_de_videojuego(Videojuego, Musica) - Parameters: Videojuego, Musica
+% historia_y_narrativa_de_videojuego(Videojuego, Historia) - Parameters: Videojuego, Historia
+% mecanicas_de_juego_de_videojuego(Videojuego, Mecanicas) - Parameters: Videojuego, Mecanicas
+% plataforma_de_videojuego(Videojuego, Plataforma) - Parameters: Videojuego, Plataforma
+% subtipo_de_plataforma(Videojuego, Tipo) - Parameters: Videojuego, Tipo
+% es_tipo_plataforma(Videojuego, Tipo) - Parameters: Videojuego, Tipo
+% es_subtipo_plataforma(Videojuego, Subtipo) - Parameters: Videojuego, Subtipo
+% tipo_de_videojuego(Videojuego, Tipo) - Parameters: Videojuego, Tipo
+% es_tipo(Videojuego, Tipo) - Parameters: Videojuego, Tipo
+% es_subtipo(Videojuego, Subtipo) - Parameters: Videojuego, Subtipo
+% es_accion(Videojuego) - Parameter: Videojuego
+% es_shooter(Videojuego) - Parameter: Videojuego
+% es_shooter_en_3d(Videojuego) - Parameter: Videojuego
+% mecanica_de_supervivencia(Videojuego) - Parameter: Videojuego
+% compania_desarrolladora_de_shooters_3d(Compania) - Parameter: Compania
+% compania_desarrolladora_de_plataformero_2d(Compania) - Parameter: Compania
+% compania_desarrolladora_de_shooter_con_esport(Compania) - Parameter: Compania
+% torneo_de_esport_de_shooter(Torneo) - Parameter: Torneo
+% videojuego_en_todas_las_plataformas(Videojuego) - Parameter: Videojuego
+% videojuego_en_pc_y_consolas(Videojuego) - Parameter: Videojuego
+% videojuego_en_pc_y_consolas_sobremesa(Videojuego) - Parameter: Videojuego
+% videojuego_en_pc_y_consolas_portatiles(Videojuego) - Parameter: Videojuego
+% consultar_torneos_esports - No parameters
+% consultar_videojuegos_esports - No parameters
+% consultar_videojuegos_esports_tipo - No parameters
+% consultar_videojuegos_esports_genero - No parameters
+% consultar_videojuegos_esports_plataforma - No parameters
+% consultar_videojuegos_esports_modelo_negocio - No parameters
+% imprimir_videojuegos_todas_plataformas - No parameters
+% consultar_videojuegos_pc_y_consolas - No parameters
+% consultar_videojuegos_pc_y_consolas_sobremesa - No parameters
+% consultar_videojuegos_pc_y_consolas_portatiles - No parameters
