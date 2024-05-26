@@ -2087,6 +2087,11 @@ es_accion(Videojuego) :-
     es_tipo(Videojuego, accion),
     write(Videojuego), write(' es de accion'), nl.
 
+% Regla para encontrar un juego de aventura
+es_aventura(Videojuego) :-
+    es_tipo(Videojuego, aventura),
+    write(Videojuego), write(' es de aventura'), nl.
+
 % Reglas compuestas
 es_shooter(Videojuego) :-
     es_subtipo(Videojuego, shooter).
@@ -2133,7 +2138,7 @@ videojuego_en_pc_y_consolas(Videojuego) :-
     sort(Plataformas, PlataformasOrdenadas),
     sort([pc, consolas_de_sobremesa, consolas_portatiles], PlataformasPermitidas),
     PlataformasOrdenadas = PlataformasPermitidas.
-
+ 
 % Regla para ver si un videojuego esta en pc y consolas de sobremesa
 videojuego_en_pc_y_consolas_sobremesa(Videojuego) :-
     videojuego_plataforma(Videojuego, Plataformas),
@@ -2241,6 +2246,7 @@ consultar_videojuegos_pc_y_consolas_portatiles :-
     ;   true
     ).
 consultar_videojuegos_pc_y_consolas_portatiles.
+
 
 
 
