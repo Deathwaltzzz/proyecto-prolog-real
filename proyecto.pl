@@ -100,6 +100,16 @@ videojuego(far_cry_5).
 videojuego(assassins_creed_odyssey).
 videojuego(assassins_creed_valhalla).
 videojuego(tom_clancys_rainbow_six_siege).
+videojuego(halo_infinite).
+videojuego(forza_horizon_5).
+videojuego(gears_5).
+videojuego(sea_of_thieves).
+videojuego(state_of_decay_2).
+videojuego(fable).
+videojuego(the_medium).
+videojuego(scorn).
+videojuego(everwild).
+videojuego(stalker_2).
 
 
 % Tipos de Videojuegos
@@ -229,6 +239,11 @@ videojuego_subtipo(far_cry_5, shooter).
 videojuego_subtipo(assassins_creed_odyssey, aventura_de_accion).
 videojuego_subtipo(assassins_creed_valhalla, aventura_de_accion).
 videojuego_subtipo(tom_clancys_rainbow_six_siege, shooter).
+videojuego_subtipo(halo_infinite, shooter).
+videojuego_subtipo(forza_horizon_5, deportes).
+videojuego_subtipo(gears_5, shooter).
+videojuego_subtipo(sea_of_thieves, aventura_de_accion).
+videojuego_subtipo(fable, rpg_de_accion).
 
 
 % Tipos de Plataformas de Videojuegos
@@ -341,6 +356,12 @@ videojuego_plataforma(far_cry_5, [pc]).
 videojuego_plataforma(assassins_creed_odyssey, [pc]).
 videojuego_plataforma(assassins_creed_valhalla, [pc]).
 videojuego_plataforma(tom_clancys_rainbow_six_siege, [pc, consolas_de_sobremesa]).
+videojuego_plataforma(halo_infinite, [pc, consolas_de_sobremesa]).
+videojuego_plataforma(forza_horizon_5, [pc, consolas_de_sobremesa]).
+videojuego_plataforma(gears_5, [pc, consolas_de_sobremesa]).
+videojuego_plataforma(sea_of_thieves, [pc, consolas_de_sobremesa]).
+videojuego_plataforma(state_of_decay_2, [pc, consolas_de_sobremesa]).
+videojuego_plataforma(fable, [pc, consolas_de_sobremesa]).
 
 % COMPONENTES DE VIDEOJUEGO
 
@@ -1417,6 +1438,55 @@ tiene_musica_y_sonido(tom_clancys_rainbow_six_siege, electronica).
 tiene_historia_y_narrativa(tom_clancys_rainbow_six_siege, narrativa_casual).
 tiene_mecanicas_de_juego(tom_clancys_rainbow_six_siege, disparos).
 
+% Halo Infinite
+videojuego_componente(halo_infinite, graficos).
+videojuego_componente(halo_infinite, musica_y_sonido).
+videojuego_componente(halo_infinite, historia_y_narrativa).
+videojuego_componente(halo_infinite, mecanicas_de_juego).
+tiene_graficos(halo_infinite, '3d').
+tiene_musica_y_sonido(halo_infinite, electronica).
+tiene_historia_y_narrativa(halo_infinite, narrativa_profunda).
+tiene_mecanicas_de_juego(halo_infinite, disparos).
+
+% Forza Horizon 5
+videojuego_componente(forza_horizon_5, graficos).
+videojuego_componente(forza_horizon_5, musica_y_sonido).
+videojuego_componente(forza_horizon_5, historia_y_narrativa).
+videojuego_componente(forza_horizon_5, mecanicas_de_juego).
+tiene_graficos(forza_horizon_5, '3d').
+tiene_musica_y_sonido(forza_horizon_5, electronica).
+tiene_historia_y_narrativa(forza_horizon_5, narrativa_casual).
+tiene_mecanicas_de_juego(forza_horizon_5, carreras).
+
+% Gear 5
+videojuego_componente(gears_5, graficos).
+videojuego_componente(gears_5, musica_y_sonido).
+videojuego_componente(gears_5, historia_y_narrativa).
+videojuego_componente(gears_5, mecanicas_de_juego).
+tiene_graficos(gears_5, '3d').
+tiene_musica_y_sonido(gears_5, electronica).
+tiene_historia_y_narrativa(gears_5, narrativa_casual).
+tiene_mecanicas_de_juego(gears_5, disparos).
+
+% Sea of Thieves
+videojuego_componente(sea_of_thieves, graficos).
+videojuego_componente(sea_of_thieves, musica_y_sonido).
+videojuego_componente(sea_of_thieves, historia_y_narrativa).
+videojuego_componente(sea_of_thieves, mecanicas_de_juego).
+tiene_graficos(sea_of_thieves, '3d').
+tiene_musica_y_sonido(sea_of_thieves, electronica).
+tiene_historia_y_narrativa(sea_of_thieves, narrativa_comica).
+tiene_mecanicas_de_juego(sea_of_thieves, aventura).
+
+% Fable
+videojuego_componente(fable, graficos).
+videojuego_componente(fable, musica_y_sonido).
+videojuego_componente(fable, historia_y_narrativa).
+videojuego_componente(fable, mecanicas_de_juego).
+tiene_graficos(fable, '3d').
+tiene_musica_y_sonido(fable, electronica).
+tiene_historia_y_narrativa(fable, narrativa_casual).
+tiene_mecanicas_de_juego(fable, aventura).
 % ----------------------------------------------------------------------------------------------------------------------------
 % Desarrollo de videojuegos
 
@@ -1572,6 +1642,11 @@ videojuego_hecho_con(far_cry_5, cryengine).
 videojuego_hecho_con(assassins_creed_odyssey, anvil).
 videojuego_hecho_con(assassins_creed_valhalla, anvil).
 videojuego_hecho_con(tom_clancys_rainbow_six_siege, anvil).
+videojuego_hecho_con(halo_infinite, custom_engine).
+videojuego_hecho_con(forza_horizon_5, custom_engine).
+videojuego_hecho_con(gears_5, custom_engine).
+videojuego_hecho_con(sea_of_thieves, custom_engine).
+videojuego_hecho_con(fable, custom_engine).
 
 
 %- ----------------------------------------------------------------------------------------------------------------------------
@@ -1740,6 +1815,12 @@ desarrollado_por(far_cry_5, ubisoft).
 desarrollado_por(assassins_creed_odyssey, ubisoft).
 desarrollado_por(assassins_creed_valhalla, ubisoft).
 desarrollado_por(tom_clancys_rainbow_six_siege, ubisoft).
+desarrollado_por(halo_infinite, xbox_game_studios).
+desarrollado_por(forza_horizon_5, xbox_game_studios).
+desarrollado_por(gears_5, xbox_game_studios).
+desarrollado_por(sea_of_thieves, xbox_game_studios).
+desarrollado_por(fable, xbox_game_studios).
+
 
 % Modelos de negocio de los videojuegos
 modelo_negocio_videojuego(super_mario_bros, pago_unico).
@@ -1840,6 +1921,11 @@ modelo_negocio_videojuego(far_cry_5, pago_unico).
 modelo_negocio_videojuego(assassins_creed_odyssey, pago_unico).
 modelo_negocio_videojuego(assassins_creed_valhalla, pago_unico).
 modelo_negocio_videojuego(tom_clancys_rainbow_six_siege, pago_unico).
+modelo_negocio_videojuego(halo_infinite, pago_unico).
+modelo_negocio_videojuego(forza_horizon_5, pago_unico).
+modelo_negocio_videojuego(gears_5, pago_unico).
+modelo_negocio_videojuego(sea_of_thieves, pago_unico).
+modelo_negocio_videojuego(fable, pago_unico).
 
 % Distribución de videojuegos
 distribuido_por(super_mario_bros, nintendo).
@@ -1940,6 +2026,12 @@ distribuido_por(far_cry_5, ubisoft).
 distribuido_por(assassins_creed_odyssey, ubisoft).
 distribuido_por(assassins_creed_valhalla, ubisoft).
 distribuido_por(tom_clancys_rainbow_six_siege, ubisoft).
+distribuido_por(halo_infinite, xbox_store).
+distribuido_por(forza_horizon_5, xbox_store).
+distribuido_por(gears_5, xbox_store).
+distribuido_por(sea_of_thieves, xbox_store).
+distribuido_por(fable, xbox_store).
+
 
 
 %- ----------------------------------------------------------------------------------------------------------------------------
@@ -2301,9 +2393,9 @@ componentes_de_videojuegos :-
     fail.
 componentes_de_videojuegos.
 % Regla para decir que juegos son en 2D
-es_2D(Videojuego) :- tiene_graficos(Videojuego, '2D').
+es_2D(Videojuego) :- tiene_graficos(Videojuego, '2d').
 % Regla para decir que juegos son en 3D
-es_3D(Videojuego) :- tiene_graficos(Videojuego, '3D').
+es_3D(Videojuego) :- tiene_graficos(Videojuego, '3d').
 % Regla para decir que juegos tienen musica de 8 bits
 es_musica_8_bits(Videojuego) :- tiene_musica_y_sonido(Videojuego, '8_bits').
 % Regla para decir que juegos tienen musica de 16 bits
