@@ -2026,7 +2026,7 @@ es_deportes(Videojuego) :- es_tipo(Videojuego, deportes).
 % Regla para decir si un juego es shooter
 es_shooter(Videojuego) :- es_subtipo(Videojuego, shooter).
 % Regla para decir si un juego es plataformero
-es_plataformero(Videojuego) :- es_subtipo(Videojuego, plataformero).
+es_plataformero(Videojuego) :- es_subtipo(Videojuego, plataformas).
 % Regla para decir si un juego es de aventura grafica.
 es_aventura_grafica(Videojuego) :- es_subtipo(Videojuego, aventura_grafica).
 % Regla para decir si un juego es aventura de accion
@@ -2042,12 +2042,118 @@ es_estrategia_tiempo_real(Videojuego) :- es_subtipo(Videojuego, estrategia_tiemp
 % Regla para decir si un juego es de estrategia por turnos
 es_estrategia_por_turnos(Videojuego) :- es_subtipo(Videojuego, estrategia_por_turnos).
 % Regla para encontrar todas las plataformas de un videojuego
+% Mostrar los videojuegos de accion
+videojuegos_de_accion :-
+    write('Videojuegos de accion: '), nl,
+    es_accion(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_de_accion.
+% Mostrar los videojuegos de aventura
+videojuegos_de_aventura :-
+    write('Videojuegos de aventura: '), nl,
+    es_aventura(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_de_aventura.
+% Mostrar los videojuegos de rol
+videojuegos_de_rol :-
+    write('Videojuegos de rol: '), nl,
+    es_rol(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_de_rol.
+% Mostrar los videojuegos de deportes
+videojuegos_de_deportes :-
+    write('Videojuegos de deportes: '), nl,
+    es_deportes(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_de_deportes.
+% Mostrar los videojuegos de estrategia
+videojuegos_de_estrategia :-
+    write('Videojuegos de estrategia: '), nl,
+    es_estrategia(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_de_estrategia.
+% Mostrar los videojuegos de shooter
+videojuegos_shooter :-
+    write('Videojuegos shooter: '), nl,
+    es_shooter(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_shooter.
+% Mostrar los videojuegos plataformeros
+videojuegos_plataformeros :-
+    write('Videojuegos plataformeros: '), nl,
+    es_plataformero(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_plataformeros.
+% Mostrar los videojuegos de aventura grafica
+videojuegos_aventura_grafica :-
+    write('Videojuegos de aventura grafica: '), nl,
+    es_aventura_grafica(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_aventura_grafica.
+% Mostrar los videojuegos de aventura de accion
+videojuegos_aventura_de_accion :-
+    write('Videojuegos de aventura de accion: '), nl,
+    es_aventura_de_accion(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_aventura_de_accion.
+% Mostrar los videojuegos de RPG por turnos
+videojuegos_rpg_por_turnos :-
+    write('Videojuegos de RPG por turnos: '), nl,
+    es_rpg_por_turnos(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_rpg_por_turnos.
+% Mostrar los videojuegos de RPG de accion
+videojuegos_rpg_de_accion :-
+    write('Videojuegos de RPG de accion: '), nl,
+    es_rpg_de_accion(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_rpg_de_accion.
+% Mostrar los videojuegos MMORPG
+videojuegos_mmorpg :-
+    write('Videojuegos MMORPG: '), nl,
+    es_mmorpg(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_mmorpg.
+% Mostrar los videojuegos de estrategia en tiempo real
+videojuegos_estrategia_tiempo_real :-
+    write('Videojuegos de estrategia en tiempo real: '), nl,
+    es_estrategia_tiempo_real(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_estrategia_tiempo_real.
+% Mostrar los videojuegos de estrategia por turnos
+videojuegos_estrategia_por_turnos :-
+    write('Videojuegos de estrategia por turnos: '), nl,
+    es_estrategia_por_turnos(Videojuego),
+    write(Videojuego), nl,
+    fail.
+videojuegos_estrategia_por_turnos.
+% Regla para encontrar las plataformas de un videojuego
 plataformas_de_videojuego :-
     write('Plataformas de videojuego: '), nl,
     plataforma_videojuego(Plataforma),
     write(Plataforma), nl,
     fail.
 plataformas_de_videojuego.
+% Mostrar los videojuegos y sus plataformas
+videojuegos_y_plataformas :-
+    write('Videojuegos y sus plataformas: '), nl,
+    videojuego_plataforma(Videojuego, Plataformas),
+    write(Videojuego), write(' - '), write(Plataformas), nl,
+    fail.
+videojuegos_y_plataformas.
 % Regla para decir a que subplataforma pertenece un videojuego
 subtipo_de_plataforma(Subplataforma, Plataforma) :-
     subplataforma_videojuego(Subplataforma, Plataforma),
@@ -2117,45 +2223,38 @@ es_de_pc_consolas_y_movil(Videojuego) :-
 % Regla para mostrar los videojuegos disponibles en PC 
 videojuegos_pc :-
     write('Videojuegos disponibles en PC: '), nl,
-    es_de_pc(Videojuego),
-    write(Videojuego), nl,
-    fail.
-videojuegos_pc.
+    setof(Videojuego, es_de_pc(Videojuego), ListaJuegos),
+    listar_juegos(ListaJuegos).
 % Regla para mostrar los videojuegos disponibles en consolas
 videojuegos_consolas :-
     write('Videojuegos disponibles en consolas: '), nl,
-    es_de_consolas(Videojuego),
-    write(Videojuego), nl,
-    fail.
-videojuegos_consolas.
+    setof(Videojuego, es_de_consolas(Videojuego), ListaJuegos),
+    listar_juegos(ListaJuegos).
 % Regla para mostrar los videojuegos disponibles en consolas de sobremesa
 videojuegos_consolas_sobremesa :-
     write('Videojuegos disponibles en consolas de sobremesa: '), nl,
-    es_de_consola_sobremesa(Videojuego),
-    write(Videojuego), nl,
-    fail.
-videojuegos_consolas_sobremesa.
+    setof(Videojuego, es_de_consola_sobremesa(Videojuego), ListaJuegos),
+    listar_juegos(ListaJuegos).
 % Regla para mostrar los videojuegos disponibles en consolas portátiles
 videojuegos_consolas_portatiles :-
     write('Videojuegos disponibles en consolas portátiles: '), nl,
-    es_de_consola_portatil(Videojuego),
-    write(Videojuego), nl,
-    fail.
-videojuegos_consolas_portatiles.
+    setof(Videojuego, es_de_consola_portatil(Videojuego), ListaJuegos),
+    listar_juegos(ListaJuegos).
 % Regla para mostrar los videojuegos disponibles en PC y consolas
 videojuegos_pc_y_consolas :-
     write('Videojuegos disponibles en PC y consolas: '), nl,
-    es_de_pc_y_consolas(Videojuego),
-    write(Videojuego), nl,
-    fail.
-videojuegos_pc_y_consolas.
+    setof(Videojuego, es_de_pc_y_consolas(Videojuego), ListaJuegos),
+    listar_juegos(ListaJuegos).
 % Regla para mostrar los videojuegos disponibles en PC, consolas y dispositivos móviles
 videojuegos_pc_consolas_movil :-
     write('Videojuegos disponibles en PC, consolas y dispositivos móviles: '), nl,
-    es_de_pc_consolas_y_movil(Videojuego),
-    write(Videojuego), nl,
-    fail.
-videojuegos_pc_consolas_movil.
+    setof(Videojuego, es_de_pc_consolas_y_movil(Videojuego), ListaJuegos),
+    listar_juegos(ListaJuegos).
+%Auxilar
+listar_juegos([]).
+listar_juegos([Juego|Resto]) :-
+    write(Juego), nl,
+    listar_juegos(Resto).
 % Regla para mostrar los graficos de un videojuego
 graficos_de_videojuegos(Graficos) :- graficos(Graficos).
 % Regla para mostrar la musica y sonido de un videojuego
