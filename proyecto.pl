@@ -1546,7 +1546,7 @@ relacion_herramienta_lenguaje_programacion(assembler, assembler).
 % Relación de videojuegos con herramientas de programación
 videojuego_hecho_con(super_mario_bros, assembler).
 videojuego_hecho_con(the_legend_of_zelda, assembler).
-videojuego_hecho_con(minecraft, java).
+videojuego_hecho_con(minecraft, libgdx).
 videojuego_hecho_con(fortnite, unreal_engine).
 videojuego_hecho_con(among_us, unity).
 videojuego_hecho_con(call_of_duty, iw_engine).
